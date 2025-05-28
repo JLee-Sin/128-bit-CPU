@@ -21,6 +21,7 @@ To combat the slow speeds of basic adders, parallel adders were made to add all 
 4. Carry Skip Adder
 5. Carry Save Adder
 6. Carry Select Adder
+
 Each adder is a part of the parallel adder family, but each has its drawbacks. The final decision was built around using either the Kogge-Stone or the Brent-Kung adders. The Kogge-Stone adder, invented by Peter M. Kogge and Harold S. Stone, is the fastest type of adder; designed to compute all carry bits simultaneously using a prefix computation tree, enabling it to compute in logarithmic time. Each bit generates an initial position g (Generate) and p (Propagate) signals. They are paired in a binary tree, eventually making larger groups and producing a carry-in for each bit position (as shown in Figure 3). The main drawback of this adder is the space required to fit all of the half adders. As the adder itself is scaled to compute larger numbers, the area of the tree increases more rapidly than most adders. 
  
 ![image](https://github.com/user-attachments/assets/f7f1d25c-0a52-4968-93ee-a069d84ea44d)
